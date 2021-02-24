@@ -14,7 +14,7 @@
     <mat-toolbar color="primary">
       <button
         type="button"
-        aria-label="Toggle sidenav"
+        aria-label="Toggle sidenav" 
         mat-icon-button
         (click)="drawer.toggle()"
         *ngIf="isHandset$ | async">
@@ -23,6 +23,8 @@
       <span>dextra-challenge</span>
     </mat-toolbar>
     <!-- Add Content Here -->
+
+    <app-comics></app-comics>
 
     <router-outlet></router-outlet>
   </mat-sidenav-content>
